@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HCH</string>
+    <string name="textContinue">Continue</string>
+    <string name="didn_t_get_the_otp_click_here_to_resend_otp_again">Didn\'t get the OTP? Click here to resend OTP again.</string>
+    <string name="our_vision">Our Vision of the future is built upon two essential ingredients: Purpose and Values. They are simple ideas with immense depth—a</string>
+
+    <string name="overViewd">
+About \'Vijay Saxena\' \n
+        Online Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding formOnline Consultation Onboarding form
+</string>
 </resources>

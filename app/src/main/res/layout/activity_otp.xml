@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.auth.OtpActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            app:cardCornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backLogin"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="12dp"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/black" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:fontFamily="@font/lato_medium"
+                    android:text="Enter the 6 digit OTP sent to\n+916280271622"
+                    android:textColor="@color/purple_700"
+                    android:textSize="@dimen/_18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/toolBack"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <in.aabhasjindal.otptextview.OtpTextView
+                    android:id="@+id/otpTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:textColor="#000000"
+                    app:bar_height="@dimen/_2dp"
+                    app:box_margin="@dimen/_4dp"
+                    app:height="@dimen/_36dp"
+                    app:length="6"
+                    app:otp=""
+                    app:otp_box_background="@drawable/stroke_8"
+                    app:otp_text_size="@dimen/_14sp"
+                    app:width="@dimen/_36dp" />
+
+                <TextView
+                    android:id="@+id/resendOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/lato_medium"
+                    android:text="@string/didn_t_get_the_otp_click_here_to_resend_otp_again"
+                    android:textColor="@color/txtBlack2" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/btnContinueOtp"
+            android:foreground="?selectableItemBackground"
+            android:background="@drawable/btn_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:padding="@dimen/_10dp"
+            android:fontFamily="@font/fnt_adl_light"
+            android:textSize="@dimen/_16sp"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/textContinue"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

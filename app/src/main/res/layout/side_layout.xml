@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="@dimen/_56dp"
+                    android:layout_height="@dimen/_56dp"
+                    android:layout_margin="@dimen/_12dp"
+                    android:src="@drawable/logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:fontFamily="@font/lato_medium"
+                    android:maxLines="1"
+                    android:text="Sushila kumari"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_16sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_medium"
+                    android:maxLines="1"
+
+                    android:text="TestUse@gmail.com"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+                    app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sideMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

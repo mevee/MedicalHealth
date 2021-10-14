@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.heathcareinhand">
-
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HCH">
+        <activity
+            android:name=".ui.signup.RegisterAsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.doctor.DoctorDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.doctor.DoctorListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.intro.IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.auth.OtpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.auth.SignupDoctorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

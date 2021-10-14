@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="IntroItemBinding">
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivIntro"
+            android:layout_width="@dimen/_180dp"
+            android:layout_height="@dimen/_180dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_60dp"
+            android:src="@drawable/intro1"
+             app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMessageIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_32dp"
+            android:textSize="@dimen/_18sp"
+            android:maxLines="3"
+
+            android:lineSpacingExtra="2.5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            android:fontFamily="@font/lato_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivIntro" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="DoctorItemBinding"></data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:transitionName="profile"
+        app:strokeColor="@color/txtBlack4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10dp">
+
+            <ImageView
+                android:id="@+id/ivDoctor"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_settings_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="2"
+                android:text="TestUse@gmail.com"
+                android:textColor="@color/txtBlack1"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintStart_toEndOf="@+id/ivDoctor"
+                app:layout_constraintTop_toTopOf="@+id/ivDoctor" />
+
+
+            <ImageView
+                android:id="@+id/ivExprtise"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/certificate"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/tvDoctorName"
+                app:tint="@color/txtBlack2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvExpertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:maxLines="1"
+                android:text="TestUse@gmail.com"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivExprtise"
+                app:layout_constraintStart_toEndOf="@+id/ivExprtise"
+                app:layout_constraintTop_toTopOf="@+id/ivExprtise" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSubExpertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:fontFamily="@font/lato_medium"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="Expertise - Surgery"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivExprtise" />
+
+
+            <ImageView
+                android:id="@+id/ivProctice"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/ic_baseline_access_time_24"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubExpertise"
+                app:tint="@color/txtBlack2" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPracticeExperinece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text=" Practice Experience : 7"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProctice"
+                app:layout_constraintStart_toEndOf="@+id/ivProctice"
+                app:layout_constraintTop_toTopOf="@+id/ivProctice" />
+
+            <ImageView
+                android:id="@+id/ivChat"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/chat"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivProctice"
+                app:tint="@color/txtBlack2" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvChatRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Verified"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivChat"
+                app:layout_constraintStart_toEndOf="@+id/ivChat"
+                app:layout_constraintTop_toTopOf="@+id/ivChat" />
+
+            <ImageView
+                android:id="@+id/ivAudio"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_2dp"
+                android:src="@drawable/ic_baseline_call_24"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivChat"
+                app:tint="@color/txtBlack2" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvAudioRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Verified"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivAudio"
+                app:layout_constraintStart_toEndOf="@+id/ivAudio"
+                app:layout_constraintTop_toTopOf="@+id/ivAudio" />
+
+            <ImageView
+                android:id="@+id/ivVideo"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_2dp"
+                android:src="@drawable/ic_baseline_videocam_24"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivAudio"
+                app:tint="@color/txtBlack2" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVideoRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Verified"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivVideo"
+                app:layout_constraintStart_toEndOf="@+id/ivVideo"
+                app:layout_constraintTop_toTopOf="@+id/ivVideo" />
+
+            <View
+                android:id="@+id/dividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:background="@color/txtBlack4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivVideo" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/_12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvBookAppointment" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTotalRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4dp"
+
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                android:text="1"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+                app:layout_constraintStart_toEndOf="@+id/ratingBar"
+                app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+
+
+            <ImageView
+                android:id="@+id/ivVerified"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:src="@drawable/user_veried"
+                app:layout_constraintBottom_toBottomOf="@+id/tvBookAppointment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                app:tint="@color/teal_700" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvVerified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Verified"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivVerified"
+                app:layout_constraintStart_toEndOf="@+id/ivVerified"
+                app:layout_constraintTop_toTopOf="@+id/ivVerified" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBookAppointment"
+                android:layout_width="@dimen/_150dp"
+                android:layout_height="@dimen/_32dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:background="@drawable/btn_8"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Book Apointment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerLine" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

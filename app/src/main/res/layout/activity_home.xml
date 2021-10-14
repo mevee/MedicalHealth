@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.HomeActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_46dp">
+
+                    <ImageView
+                        android:id="@+id/ivMenu"
+                        android:layout_width="@dimen/_32dp"
+                        android:layout_height="@dimen/_32dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:background="?selectableItemBackground"
+                        android:padding="@dimen/_4dp"
+                        android:src="@drawable/ic_baseline_menu_24" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_32dp"
+                            android:layout_height="@dimen/_32dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="?selectableItemBackground"
+                            android:padding="@dimen/_4dp"
+                            android:src="@drawable/wallet" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/materialTextView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/btn_8"
+                            android:fontFamily="@font/lato_medium"
+                            android:maxLines="1"
+                            android:padding="@dimen/_2dp"
+                            android:text=" 200 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                            app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_48dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24dp"
+                        android:layout_height="@dimen/_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:padding="@dimen/_4dp"
+                        android:src="@drawable/ic_baseline_location" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/lato_medium"
+                        android:maxLines="1"
+                        android:padding="@dimen/_4dp"
+                        android:text="Jasola, New Delhi"
+                        android:textColor="@color/txtBlack1"
+                        android:textSize="@dimen/_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_24dp"
+                        android:layout_height="@dimen/_24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="?selectableItemBackground"
+                        android:padding="@dimen/_2dp"
+                        android:rotation="90"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardTool">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180dp">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/vpSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:fontFamily="@font/lato_medium"
+                        android:maxLines="1"
+                        android:text="Get Medical Help"
+                        android:textColor="@color/txtBlack1"
+                        android:textSize="@dimen/_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvOurOfferings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="@color/purple_700"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_8dp"
+                        android:paddingBottom="@dimen/_8dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:fontFamily="@font/lato_medium"
+                            android:maxLines="1"
+                            android:text="OUR SERVICES"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                            app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:fontFamily="@font/lato_medium"
+                            android:maxLines="1"
+                            android:text="Explore"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                            app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSpotLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8dp" />
+
+                        <com.rd.PageIndicatorView
+                            android:id="@+id/pIndicatHome"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/_10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_12dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:fontFamily="@font/lato_medium"
+                        android:maxLines="1"
+                        android:text="TESTIMONIALS:"
+                        android:textColor="@color/txtBlack1"
+                        android:textSize="@dimen/_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                        app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTestimonials"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp" />
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:background="@color/purple_500"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_8dp"
+                        android:paddingBottom="@dimen/_8dp">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_64dp"
+                            android:layout_height="@dimen/_64dp"
+                            android:layout_margin="@dimen/_16dp"
+                            android:src="@drawable/logo" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:fontFamily="@font/fnt_adl_light"
+                            android:text="@string/our_vision"
+                            android:textColor="@color/grey2"
+                            android:textSize="@dimen/_18sp"
+                            app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                            app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:layout_marginBottom="@dimen/_16dp"
+                            android:fontFamily="@font/fnt_adl_light"
+                            android:text="Made by HCH @ Noida"
+                            android:textColor="@color/grey2"
+                            android:textSize="@dimen/_16sp"
+                            app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                            app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <include
+                android:id="@+id/sideLay"
+                layout="@layout/side_layout" />
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

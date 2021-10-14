@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="OurServiceItemBinding"></data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6dp"
+        app:cardCornerRadius="@dimen/_12dp"
+        app:strokeColor="@color/txtBlack4"
+        app:strokeWidth="@dimen/_1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_8dp">
+
+            <ImageView
+                android:id="@+id/ivOffer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOfferLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginStart="@dimen/_6dp"
+                android:layout_marginBottom="@dimen/_6dp"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:fontFamily="@font/lato_medium"
+                android:maxLines="2"
+                android:text="TestUse@gmail.com"
+                android:textColor="@color/txtBlack1"
+                android:textSize="@dimen/_15sp"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView2"
+                app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
