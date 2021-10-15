@@ -58,6 +58,15 @@
                 android:id="@+id/sideMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/_6dp"
+                android:background="@color/lightGreyBackGround" />
+
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </layout>

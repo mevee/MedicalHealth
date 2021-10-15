@@ -1,4 +1,4 @@
-package com.heathcareinhand.ui.doctor
+package com.heathcareinhand.ui.doctor.doctorProfile
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,15 +9,17 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import com.heathcareinhand.databinding.*
 import com.heathcareinhand.ui.common.SelectModel
+import com.heathcareinhand.ui.common.SingleListAdapter
 import com.heathcareinhand.ui.common.SingleSelectAdapter
+import com.heathcareinhand.ui.doctor.DoctorSchedule
 import com.heathcareinhand.ui.intro.IntroModel
 
-class DoctorTimeTableAdapter(
+class ProfileTimeTableAdapter(
     val context: Context?,
     val introDataList: List<DoctorSchedule>,
     val listener:(position:Int,selectedValue:String)->Unit
 ) :
-    RecyclerView.Adapter<DoctorTimeTableAdapter.IntroViewHolder>() {
+    RecyclerView.Adapter<ProfileTimeTableAdapter.IntroViewHolder>() {
 
     var selectPosition=-1
     var innerPosition=-1
@@ -43,7 +45,7 @@ class DoctorTimeTableAdapter(
             dataList.add(SelectModel(timeSlot, index))
         }
 
-        val timeSelectAdapter = SingleSelectAdapter(context, dataList){
+        val timeSelectAdapter = SingleListAdapter(context, dataList){
             positionLocal, selectedValue ->
             if (selectPosition!=position){
                 this.selectPosition = position

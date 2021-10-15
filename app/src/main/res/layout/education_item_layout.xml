@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="EducationItemBinding"></data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:transitionName="profile"
+        app:strokeColor="@color/txtBlack4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10dp">
+
+            <ImageView
+                android:id="@+id/ivDeleteExperience"
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="@dimen/_32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_delete_outline_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDoctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="2"
+                android:text="California Universcity Shicago"
+                android:textColor="@color/txtBlack1"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <ImageView
+                android:id="@+id/ivExprtise"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:visibility="visible"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/certificate"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/tvDoctorName"
+                app:tint="@color/txtBlack2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvExpertise"
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:maxLines="1"
+                android:text="Degree : MBBS (Medicines)"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivExprtise"
+                app:layout_constraintStart_toEndOf="@+id/ivExprtise"
+                app:layout_constraintTop_toTopOf="@+id/ivExprtise" />
+
+            <ImageView
+                android:id="@+id/ivSubExprtise"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/ic_baseline_location"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivExprtise"
+                app:tint="@color/txtBlack2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSubExpertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_medium"
+                android:layout_marginStart="@dimen/_6dp"
+                android:maxLines="1"
+                android:text="United state of America"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSubExprtise"
+                app:layout_constraintStart_toEndOf="@+id/ivSubExprtise"
+                app:layout_constraintTop_toTopOf="@+id/ivSubExprtise" />
+
+   <ImageView
+                android:id="@+id/ivDegreeNo"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/certificate_no"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivSubExprtise"
+                app:tint="@color/txtBlack2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDegreeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_medium"
+                android:layout_marginStart="@dimen/_6dp"
+                android:maxLines="1"
+                android:text="Degree No. DG1000GR"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivDegreeNo"
+                app:layout_constraintStart_toEndOf="@+id/ivDegreeNo"
+                app:layout_constraintTop_toTopOf="@+id/ivDegreeNo" />
+
+
+            <ImageView
+                android:id="@+id/ivProctice"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                app:tint="@color/txtBlack2"
+                android:src="@drawable/time_interval"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivDegreeNo"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPracticeExperinece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6dp"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="16 Aug 2010 - 22 Apr 2021"
+                android:textColor="@color/txtBlack2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivProctice"
+                app:layout_constraintStart_toEndOf="@+id/ivProctice"
+                app:layout_constraintTop_toTopOf="@+id/ivProctice" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

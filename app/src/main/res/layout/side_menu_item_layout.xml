@@ -9,7 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
-        android:id="@+id/mainSideMenu">
+        android:id="@+id/mainSideMenu"
+        android:background="?selectableItemBackground">
 
         <ImageView
             android:id="@+id/ivSideMenu"

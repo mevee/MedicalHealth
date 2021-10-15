@@ -16,8 +16,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         binding.backLogin.setOnClickListener { onBackPressed() }
-        binding.btnContinue.alpha = 0.3f
-        binding.btnContinue.isEnabled = false
+//        binding.btnContinue.alpha = 0.3f
+//        binding.btnContinue.isEnabled = false
 
         binding.etMobileNumber.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -42,7 +42,6 @@ class LoginActivity : AppCompatActivity() {
 
             }
         })
-        binding.btnContinue.isEnabled = false
         binding.btnContinue.setOnClickListener {
             otpScreen()
         }

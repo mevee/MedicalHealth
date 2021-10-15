@@ -41,12 +41,12 @@ class DoctorDetailActivity : AppCompatActivity() {
             DoctorSchedule(
                 "16 Aug 2021",
                 "MON",
-                listOf("11:00AM-02:00PM", "11:00AM-02:00PM", "11:00AM-02:00PM")
+                listOf("11:00AM-02:00PM", "12:00AM-04:00PM", "06:00AM-09:00PM")
             ),
             DoctorSchedule(
                 "17 Aug 2021",
                 "TUE",
-                listOf("11:00AM-02:00PM", "11:00AM-02:00PM", "11:00AM-02:00PM")
+                listOf("01:00AM-02:00PM", "02:00AM-02:00PM", "03:00AM-04:00PM")
             ),
             DoctorSchedule(
                 "18 Aug 2021",
@@ -70,7 +70,11 @@ class DoctorDetailActivity : AppCompatActivity() {
             )
 
         )
-        doctorTimeTableAdapter = DoctorTimeTableAdapter(this,calenderList)
+        doctorTimeTableAdapter = DoctorTimeTableAdapter(this,calenderList){
+            position, selectedValue ->
+            binding.tvBookAppointment.text = "Book Appointment of \n$selectedValue"
+
+        }
         binding.rvCalenderList.adapter = doctorTimeTableAdapter
         binding.rvCalenderList.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)

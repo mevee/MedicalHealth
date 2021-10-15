@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.doctor.filter.FilterDoctorFragment">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48dp"
+            android:background="@color/purple_500">
+
+            <ImageView
+                android:id="@+id/ivCloseFilter"
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="@dimen/_32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8dp"
+                android:background="?selectableItemBackground"
+                android:padding="@dimen/_8dp"
+                android:src="@drawable/close"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_50dp"
+                android:background="@color/transparent"
+                android:fontFamily="@font/lato_bold"
+                android:padding="@dimen/_8dp"
+                android:text="Filters"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+
+
+        </FrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_48dp"
+            android:layout_marginBottom="@dimen/_40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:maxLines="1"
+                    android:text="Select Specialist"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSpecialist"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:maxLines="1"
+                    android:text="Available On"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAvailableOn"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:maxLines="1"
+                    android:text="Fees Range"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFeeRange"
+
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:maxLines="1"
+                    android:text="Experience"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvExperience"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_12dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:maxLines="1"
+                    android:text="Gender"
+                    android:textColor="@color/txtBlack1"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivProfileImage" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGender"
+
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvReset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Reset"
+                android:textColor="@color/txtBlack1"
+                android:textSize="@dimen/_16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvApplyFilter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/teal_700"
+                android:fontFamily="@font/lato_bold"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:text="Apply Filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

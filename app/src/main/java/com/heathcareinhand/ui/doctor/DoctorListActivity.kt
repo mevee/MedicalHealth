@@ -11,6 +11,7 @@ import com.heathcareinhand.R
 import com.heathcareinhand.databinding.ActivityDoctorListBinding
 
 import androidx.core.app.ActivityOptionsCompat
+import com.heathcareinhand.ui.doctor.filter.FilterDoctorFragment
 
 
 class DoctorListActivity : AppCompatActivity() {
@@ -34,7 +35,15 @@ class DoctorListActivity : AppCompatActivity() {
         )
         binding.spFilter.adapter = adapter
 
+        binding.cardFilters.setOnClickListener {
+            showApplyFilterDialogue()
+        }
         setDoctorList()
+    }
+
+    private fun showApplyFilterDialogue() {
+        val dialogeFilter = FilterDoctorFragment.newInstance("","")
+        dialogeFilter.show(supportFragmentManager,"filter")
     }
 
     private fun setDoctorList() {

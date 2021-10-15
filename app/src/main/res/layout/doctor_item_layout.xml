@@ -69,18 +69,30 @@
                 app:layout_constraintStart_toEndOf="@+id/ivExprtise"
                 app:layout_constraintTop_toTopOf="@+id/ivExprtise" />
 
+            <ImageView
+                android:id="@+id/ivSubExprtise"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3dp"
+                android:src="@drawable/stethoscope"
+                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
+                app:layout_constraintTop_toBottomOf="@+id/ivExprtise"
+                app:tint="@color/txtBlack2" />
+
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvSubExpertise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                 android:fontFamily="@font/lato_medium"
+                android:fontFamily="@font/lato_medium"
+                android:layout_marginStart="@dimen/_6dp"
                 android:maxLines="1"
-                android:layout_marginTop="@dimen/_3dp"
                 android:text="Expertise - Surgery"
                 android:textColor="@color/txtBlack2"
                 android:textSize="@dimen/_12sp"
-                app:layout_constraintStart_toStartOf="@+id/tvDoctorName"
-                app:layout_constraintTop_toBottomOf="@+id/ivExprtise" />
+                app:layout_constraintBottom_toBottomOf="@+id/ivSubExprtise"
+                app:layout_constraintStart_toEndOf="@+id/ivSubExprtise"
+                app:layout_constraintTop_toTopOf="@+id/ivSubExprtise" />
 
 
             <ImageView

@@ -5,11 +5,17 @@
       <map>
         <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable-v24/stroke_8.xml" value="0.2203125" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable/btn_8.xml" value="0.2203125" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable/btn_8_light.xml" value="0.2203125" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable/selected_dot.xml" value="0.2203125" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable/stroke_8.xml" value="0.2203125" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/drawable/unselected_dot.xml" value="0.2203125" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/acount_detail_layout.xml" value="0.20102564102564102" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/acount_oline_consulting_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/acount_useonly_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_contact_info.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_doctor_detail.xml" value="0.22" />
-        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_doctor_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_doctor_list.xml" value="0.2" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_doctor_profile.xml" value="0.17625899280575538" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_intro.xml" value="0.25" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
@@ -18,10 +24,21 @@
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_register_as.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/activity_signup_doctor.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/doctor_item_layout.xml" value="0.33" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/education_item_layout.xml" value="0.40370370370370373" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/experience_item_layout.xml" value="0.40370370370370373" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/fragment_add_education.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/fragment_add_experience.xml" value="0.25" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/fragment_add_time.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/fragment_filter_doctor.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/intro_item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/multi_select_item_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/offering_item_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/ourservice_item_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/schedule_doctor_item_layout.xml" value="0.20102564102564102" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/schedule_editable_item_layout.xml" value="0.25" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/schedule_item_layout.xml" value="0.20102564102564102" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/selectable_item_layout.xml" value="0.20102564102564102" />
+        <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/selected_eidtable_item_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/side_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/side_menu_item_layout.xml" value="0.25" />
         <entry key="..\:/my_new_p/HCH/app/src/main/res/layout/slidet_item_layout.xml" value="0.12" />

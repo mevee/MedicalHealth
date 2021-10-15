@@ -3,6 +3,7 @@ package com.heathcareinhand.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -12,10 +13,12 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import com.heathcareinhand.R
 import com.heathcareinhand.databinding.ActivityHomeBinding
+import com.heathcareinhand.ui.about.ContactInfoActivity
 import com.heathcareinhand.ui.auth.SignupDoctorActivity
 import com.heathcareinhand.ui.common.SliderAdapter
 import com.heathcareinhand.ui.common.SliderModel
 import com.heathcareinhand.ui.doctor.DoctorListActivity
+import com.heathcareinhand.ui.doctor.doctorProfile.DoctorProfileActivity
 import com.heathcareinhand.ui.home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -178,6 +181,11 @@ class HomeActivity : AppCompatActivity() {
     private fun openDrawer() {
         binding.drawerHome.openDrawer(GravityCompat.START)
     }
+    private fun closeDrawer() {
+        Handler().postDelayed({
+        binding.drawerHome.closeDrawer(GravityCompat.START)
+        },100)
+    }
 
     private fun setSideMenu() {
         val sideMenuOptionsList =
@@ -192,6 +200,7 @@ class HomeActivity : AppCompatActivity() {
                 SideMenuModel(resources.getDrawable(R.drawable.list_file), "Tests ( Labs )", "Tests ( Labs )"),
                 SideMenuModel(resources.getDrawable(R.drawable.faq_icon), "Complains", "Settings"),
                 SideMenuModel(resources.getDrawable(R.drawable.help), "Help", "Help"),
+                SideMenuModel(resources.getDrawable(R.drawable.help_icon), "Contact HCH", "Contact"),
                 SideMenuModel(resources.getDrawable(R.drawable.share_icon), "Share", "Share"),
                 SideMenuModel(
                     resources.getDrawable(R.drawable.ic_baseline_settings_24),
@@ -201,8 +210,11 @@ class HomeActivity : AppCompatActivity() {
             )
 
         sideMenuAdapter = SideMenuAdapter(this, sideMenuOptionsList){
-            position, action ->when(action){
-            "Profile" -> startActivity(Intent(this,SignupDoctorActivity::class.java))
+            position, action ->
+            closeDrawer()
+            when(action){
+            "Profile" -> startActivity(Intent(this, DoctorProfileActivity::class.java))
+            "Contact" -> startActivity(Intent(this, ContactInfoActivity::class.java))
             "Complains" -> ""
             "Help" -> ""
             "Logout" -> ""
