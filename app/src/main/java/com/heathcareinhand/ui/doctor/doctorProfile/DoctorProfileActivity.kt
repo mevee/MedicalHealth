@@ -10,12 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.heathcareinhand.R
 import com.heathcareinhand.databinding.ActivityDoctorProfileBinding
-import com.heathcareinhand.databinding.ActivitySignupDoctorBinding
 import com.heathcareinhand.ui.common.MultiSelectAdapter
 import com.heathcareinhand.ui.common.SelectModel
-import com.heathcareinhand.ui.doctor.DoctorSchedule
-import com.heathcareinhand.ui.doctor.DoctorTimeTableAdapter
-import com.heathcareinhand.ui.doctor.filter.FilterDoctorFragment
 import com.heathcareinhand.ui.home.OfferingModel
 
 class DoctorProfileActivity : AppCompatActivity() {

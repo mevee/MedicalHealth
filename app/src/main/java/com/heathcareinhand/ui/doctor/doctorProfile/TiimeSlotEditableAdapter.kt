@@ -1,27 +1,24 @@
-package com.heathcareinhand.ui.common
+package com.heathcareinhand.ui.doctor.doctorProfile
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import coil.transform.CircleCropTransformation
-import com.heathcareinhand.R
 import com.heathcareinhand.databinding.*
-import com.heathcareinhand.ui.intro.IntroModel
+import com.heathcareinhand.ui.common.SelectModel
 
-class SingleListAdapter(
+class TiimeSlotEditableAdapter(
     val context: Context?,
     val introDataList: MutableList<SelectModel>,
     val listener:(position:Int,selectedValue:String)->Unit
 ) :
-    RecyclerView.Adapter<SingleListAdapter.IntroViewHolder>() {
+    RecyclerView.Adapter<TiimeSlotEditableAdapter.IntroViewHolder>() {
 
-    data class IntroViewHolder(val bind: SingleEditableItemBinding) :
+    data class IntroViewHolder(val bind: TimeSlotEditableItemBinding) :
         RecyclerView.ViewHolder(bind.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IntroViewHolder {
-        val binding = SingleEditableItemBinding.inflate(LayoutInflater.from(context), parent, false)
+        val binding = TimeSlotEditableItemBinding.inflate(LayoutInflater.from(context), parent, false)
         return IntroViewHolder(binding)
     }
 
